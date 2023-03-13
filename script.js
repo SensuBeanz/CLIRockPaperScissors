@@ -65,6 +65,36 @@ function playRound() {
                 break;
         }
         break;
+        case "Paper":
+        switch (computer) {
+            case "Rock":
+                console.log("You win this round!");
+                playerScore++;
+                break;
+            case "Paper":
+                console.log("The round is a tie!");
+                break;
+            case "Scissors":
+                console.log("Computer wins this round.");
+                computerScore++;
+                break;
+        }
+        break;
+        case "Scissors":
+        switch (computer) {
+            case "Rock":
+                console.log("Computer wins this round.");
+                computerScore++;
+                break;
+            case "Paper":
+                console.log("You win this round!");
+                playerScore++;
+                break;
+            case "Scissors":
+                console.log("The round is a tie!");
+                break;
+        }
+        break;
     }
     console.log("Player " + playerScore + ", Computer " + computerScore)
 }
