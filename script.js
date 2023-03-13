@@ -102,4 +102,15 @@ function playRound() {
 let playerScore = 0
 let computerScore = 0
 
-playRound()
+function playGame() {
+    for (let i = 1; i <= 5; i++) {
+        playRound()
+    }
+    if (playerScore > computerScore) {
+        console.log("You win thew game!!")
+    } else {
+        console.log("BOOOO, The computer wins.")
+    }
+}
+
+playGame()
