@@ -107,9 +107,11 @@ function playGame() {
         playRound()
     }
     if (playerScore > computerScore) {
-        console.log("You win thew game!!")
-    } else {
+        console.log("You win the game!!")
+    } else if (computerScore > playerScore) {
         console.log("BOOOO, The computer wins.")
+    } else {
+        console.log("The game is a tie.")
     }
 }
 
